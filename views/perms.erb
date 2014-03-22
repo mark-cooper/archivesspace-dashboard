@@ -1,0 +1,29 @@
+<div class="page-header">
+  <h1>Permissions table <small><a href="/"><span class="glyphicon glyphicon-home"></span></a></small></h1>
+</div>
+
+
+<div class="row">
+  <div class="col-md-12">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>code</th>
+          <th>description</th>
+          <th>level</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @p.each do |code, attributes| %>
+          <tr>
+            <td><%= code %></td>
+            <td><%= attributes[:description] %></td>
+            <td><%= attributes[:level] %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<p><a href="/"><span class="glyphicon glyphicon-home"></span></a></p>
