@@ -14,8 +14,9 @@ class App < Sinatra::Base
     set :groups  , nil
   end
 
-  error do
-    'The application encountered an error.'
+  error do |e|
+    @e = e
+    erb :error, layout: true
   end
 
   # TODO: CATCH CONNECTION ERROR
