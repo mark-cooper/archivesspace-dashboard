@@ -26,5 +26,11 @@ Enter values as appropriate for:
 - pass: password for the above user account
 - repo: the code of the repository to get data from
 
+```
+bundle install
+bundle exec rackup config.ru
+# by default go to: http://localhost:9292
+```
+
 ---
 
